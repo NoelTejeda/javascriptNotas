@@ -1,0 +1,39 @@
+las variables deben comenzar con:
+
+una letra
+un signo de $
+un guion bajo _
+**NUNCA** empezar con numeros ó caracteres especiales.
+
+.................................................................................
+
+Recomendaciones para buenas prácticas:
+
++ usar snake_case para archivos:
+mi_archivo_javascript.js
+
++ usar UPPER_CASE en constantes:
+const UNA_CONSTANTE = 'soy una constante'
+
++ usar UpperCamelCase (todas las primeras letras en mayúscula) en clases:
+class SerHumano {
+    constructor(nombre, genero){
+        this.nombre = nombre
+        this.genero = genero
+    }
+}
+
++ usar lowerCamelCase (primera minuscula después las que vengan mayusculas) en Objetos, Funciones, Primitivos, instancias:
+
+objetos:
+const unObjeto = {
+    nombre:'Jonathan'
+}
+
+primitivos:
+let unaCadena = 'HOla',
+    unNumero = 19,
+    unBoolean = true
+
+...........................................................................................
+
