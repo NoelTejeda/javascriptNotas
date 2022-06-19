@@ -9,10 +9,10 @@ un guion bajo _
 
 Recomendaciones para buenas prácticas:
 
-+ usar snake_case para archivos:
++ usar snake_case (uso de pisobajo) para archivos:
 mi_archivo_javascript.js
 
-+ usar UPPER_CASE en constantes:
++ usar UPPER_CASE (todas mayúsculas) en constantes:
 const UNA_CONSTANTE = 'soy una constante'
 
 + usar UpperCamelCase (todas las primeras letras en mayúscula) en clases:
@@ -36,4 +36,99 @@ let unaCadena = 'HOla',
     unBoolean = true
 
 ...........................................................................................
+...........................................................................................
 
+VARIABLES: 
+ 
+ constantes: no cambian
+ const NUMERO = 3 
+ recordar que se usa UPPER_CASE
+
+ Let: solo cambia en el ámbito (scoope) donde la asignemos
+        No se puede reasignar un mismo variable con let ya que generaria un error de sintaxys. systaxError: ....
+
+ function saludar (nombre){
+    let saludo = 'HOla';
+    let saludo = 'chao';
+    console.log(saludar) //el resultado seria un error: systaxError: ....
+ }
+
+    ** PERO ** si la declaramos en otro scoope si es valido ejemplo:
+
+    function saludar(nombre){
+        let saludo = 'hola';
+        if(nombre === 'sasha'){
+            let saludo = 'chao';  //esta seria la declaracion de la misma variable en otro scoope 
+            console.log('Acá la prueba: ' +saludo)
+        }
+    }
+
+
+
+ var: para declarar una variable global.
+ se puede declarar una variable con var y reasignarla sin inconveniente ejemplo:
+ function saludar (nombre){
+    var saludo = 'HOla';
+    var saludo = 'chao';
+    console.log(saludar) //el resultado será chao
+ }
+
+
+
+
+Conclusion:
+
+* las variables con var puden ser redeclaradas
+
+* las varibles con let NO puden ser redeclaradas ya que generaria un error de syntax, lo que si es posible es redeclararla dentro de otro scoope como en el ejemplo de arriba. 
+
+las declaraciones con let y var si se declaran vacias, generará un undefined; en cambio con const no se puede hacer, porque no se podria después dar algun valor:
+
+var nombre; //undefined
+let nombre; //undefined
+const NOMBRE; //no dejaria agregarle un valor más adelante. 
+
+
+* NO se pueden redeclarar variables con const, esto genrearia error de syntax.
+
+
+Es "recomendable usar let que var"
+el problema es la compatibilidad con los buscadores antiguos. (let, const), pero si compila con babel esto se soluciona.
+ 
+
+
+...........................................................................................
+...........................................................................................
+
+
+***Tipos de salida***
+
+
+    Writing into an HTML element, using innerHTML. //Muestra en Html el mensaje deseado
+    Writing into the HTML output using document.write().
+    Writing into an alert box, using window.alert().  //Muestra una ventana de alerta con el mensaje deseado
+    Writing into the browser console, using console.log(). // Muestra en la consola la salida esperada 
+    <button onclick="window.print()">Print this page</button> // imprime un pdf
+
+---
+con innerHTML se imprime directamente en el html
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+----
+con window.alert()
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+----
+con console.log
+<script>
+console.log(5 + 6);
+</script>
+----
+IMPRIMIR UN PDF
+
+<button onclick="window.print()">Print this page</button>
