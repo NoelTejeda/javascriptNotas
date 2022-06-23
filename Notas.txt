@@ -11,10 +11,10 @@ Recomendaciones para buenas prácticas:
 
 + usar snake_case (uso de pisobajo) para archivos:
 mi_archivo_javascript.js
-
+------------------
 + usar UPPER_CASE (todas mayúsculas) en constantes:
 const UNA_CONSTANTE = 'soy una constante'
-
+------------------ 
 + usar UpperCamelCase (todas las primeras letras en mayúscula) en clases:
 class SerHumano {
     constructor(nombre, genero){
@@ -22,7 +22,7 @@ class SerHumano {
         this.genero = genero
     }
 }
-
+------------------
 + usar lowerCamelCase (primera minuscula después las que vengan mayusculas) en Objetos, Funciones, Primitivos, instancias:
 
 objetos:
@@ -34,6 +34,38 @@ primitivos:
 let unaCadena = 'HOla',
     unNumero = 19,
     unBoolean = true
+
+funciones:
+function holaMundo(nombre) {
+  alert(`Hola mundo ${nombre}`);
+}
+holaMundo("Jonathan");
+
+instancias:
+const ajax = new XMLHttpRequest(),
+  jon = new SerHumano("Jonathan", "Hombre");
+
+...........................................................................................
+...........................................................................................
+Tipos de datos:
+
+Primitivos: Se accede directamente al valor.
+
+    string
+    number
+    boolean
+    null
+    undefined
+    NaN
+
+Compuestos: Se accede a la referencia del valor.
+
+    object = {}
+    array = []
+    function () { }
+    Class {}
+    etc.
+
 
 ...........................................................................................
 ...........................................................................................
@@ -132,3 +164,110 @@ console.log(5 + 6);
 IMPRIMIR UN PDF
 
 <button onclick="window.print()">Print this page</button>
+
+...........................................................................................
+...........................................................................................
+
+Cadenas (String):
+
+manera formal:
+let saludo = new String('hola');
+esta manera de utilizar su constructor (String) es poco utilizada
+
+manera simplificada:
+let nombre = 'Noel';
+
+métodos:
+let nombre:"noel";
+let apellido:"tejeda";
+let saludo = new String('hola');
+let lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum odio magnam?"
+
+console.log(nombre,apellido,saludo)
+console.log(nombre.length,
+            apellido.length,
+            saludo.length,
+            nombre.toUpperCase(),
+            apellido.toLowerCase(),
+            lorem.includes("amet")
+            );
+
+
+.length = indica el número de caracteres
+.toUpperCase= transforma el texto a mayúscula	
+.toLowerCase= transforma el texto en minúscula
+.includes= devuelve true ó false si se encuentra la palabra en el texto. 
+
+...........................................................................................
+...........................................................................................
+
+Concatenación:
+
+Existen 2 maneras 
+1) usando el operador +
+
+let nombre = 'noel';
+let apellido = 'tejeda';
+console.log('mi nombre es '+" "+nombre+" "+apellido)
+
+2) y la otra es la interpolación de varibles:
+
+********** Template String: **********************
+
+console.log (`mi nombre es ${nombre} ${apellido}`)
+
+
+Nota: antes de emacscript6 para hacer saltos de linea habia que usar: \n   ejemplo:
+console.log ('linea 1 de texto\n'+
+'\y linea 2 de texto');
+
+pero ahora con los template string se hace así:
+
+console.log (`linea 1 de texto 
+y linea 2 de texto`);
+
+y el resultado es el mismo, pero con la ventaja que no se usa concatenación ni salto de linea.
+
+
+pero es importante saber que se deben usar las backstick (comillas invertidas alt+96) y hasta se ve mucho mejor que usando el operador +
+
+En caso de querer escapar una comilla o tilde invertida en una plantilla literal, se debe poner una barra invertida (\) antes de la comilla o tilde invertida. ejemplo:
+                                `\`` === '`' // --> true (cierto)
+
+
+...........................................................................................
+...........................................................................................
+
+Números:
+
+**toFixed ó redondeo**
+
+para mostrar la cantidad de decimales que queramos se usa: toFixed(3)     muestra 3 decimales.  ejemplo:
+
+let a = 5;
+let b = 3;
+resultado= a/b;
+console.log(resultado.toFixed(4));
+console.log(typeof resultado);
+
+el resultado será: 1.6667
+
+si no le coloco la cantidad de decimales a mostrar lo que hará es redondear la cantidad más cercana.  y retornará un tipo de dato de tipo String.
+
+console.log(parseInt(resultado))  //solo devolverá la parte entera, sin los decimales.
+
+
+*** transformar String a numero ***
+
+let a= 2;  // numero
+let b = "2.2"  // String
+console.log(a+parseFloat(b))   //cambio de string a float.
+
+
+
+
+
+
+
+
+
