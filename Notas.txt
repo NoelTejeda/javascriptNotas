@@ -1,3 +1,11 @@
+*******ORDENAMIENTO DE CÓDIGO:*******
+1.- Importación de módulos 
+2.- Declaración de variables
+3.- Declaración de funciones
+4.- Ejecución de código
+
+------------------------------------------------------------------------
+
 las variables deben comenzar con:
 
 una letra
@@ -261,13 +269,74 @@ console.log(parseInt(resultado))  //solo devolverá la parte entera, sin los dec
 
 let a= 2;  // numero
 let b = "2.2"  // String
-console.log(a+parseFloat(b))   //cambio de string a float.
+console.log(a+parseFloat(b))   //cambio de string a float. es lo que se llama como casting.
+
+casting: un casting (o cast) sirve para cambiar el tipo de dato del valor resultante de una expresión.
 
 
+...........................................................................................
+...........................................................................................
+
+*** Funciones ****  
+
+* Funciones Expresadas
+* Funciones Declaradas
+
+Una funcion es un bloque de código, autocontenido, qud se puede definir una vez y ejecutar en cualquier momento. opcionalmente, una función puede aceptar parámetros separados por comas (,) y devolver un valor.
+
+Las funciones JavaScript son objetos.
+
+--*Funciones Declaradas*--
+
+Una función declarada puede invocarse en cualquier parte de nuestro código incluso antes de que la funcion sea declarada.
+Una función es "declarada" cuando el enunciado empieza con la palabra clave function ejemplo:
+
+function saludar(nombre, edad){
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años `);
+}
+saludar("Noel", 40)
 
 
+--*Funciones Expresadas*--
+
+en la creación de una función expresada no es necesario colocarle un nombre a la función. (también llamada función anónima)
+para la creación de funciones expresadas es recomendable usar const y no let
+para invocar una función expresada obligatoriamente debe ser después de inicializada, si se invoca antes arrojará un error: Uncaught ReferenceError...
+
+//función anónima
+const funcionExpresada = function(){
+    console.log("mensaje de prueba")
+}
+
+funcionExpresada();
 
 
+**** Conclusión ****
+
+- una función es declarada cuando el enunciado empieza con la palabra clave function. 
+- en la función declarativa se puede invocar antes ó después de haberse inicializado.
+- una función expresada es necesario que primero sea inicializada y despúes invocada (antes NO)
+- a una función expresada también se le llama función anónima, porque no se le coloca nombre, pero mayormente es inicializada como una variable constante.
 
 
+...........................................................................................
+...........................................................................................
 
+*** Arrays ****  
+
+los arreglos o matrices se usan para almacenar una lista de manera ordenada de elementos, bajo un solo nombre de variable.
+
+se describen como objetos tipo lista.
+
+si no tuvieramos matrices tendriamos que almacenar cada elemento en un avariable separada.
+
+una matriz que se encuentra dentro de otra se le llama matriz multidimensional ejemplo:
+
+let random = ['tree', 795, [0, 1, 2]];
+random[2][2]; //primer corchete accede a la matriz random, el segundo par de corchetes accedemos a la siguiente matriz.
+
+
+algunos metodos para acceder a las matrices son:
+
+push :  incluir uno o más elementos que desees agregas al final de tu matriz
+pop : Eliminar el último elemento de una matriz es tan simple como ejecutar pop() en ella
