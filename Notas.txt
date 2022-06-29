@@ -340,3 +340,6 @@ algunos metodos para acceder a las matrices son:
 
 push :  incluir uno o más elementos que desees agregas al final de tu matriz
 pop : Eliminar el último elemento de una matriz es tan simple como ejecutar pop() en ella
+
+
+//es una prueba de github
