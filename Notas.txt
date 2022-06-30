@@ -322,7 +322,7 @@ funcionExpresada();
 ...........................................................................................
 ...........................................................................................
 
-*** Arrays ****  
+*** Arrays ****  [ arrays ]
 
 los arreglos o matrices se usan para almacenar una lista de manera ordenada de elementos, bajo un solo nombre de variable.
 
@@ -340,3 +340,7 @@ algunos metodos para acceder a las matrices son:
 
 push :  incluir uno o más elementos que desees agregas al final de tu matriz
 pop : Eliminar el último elemento de una matriz es tan simple como ejecutar pop() en ella
+
+...........................................................................................
+...........................................................................................
+
