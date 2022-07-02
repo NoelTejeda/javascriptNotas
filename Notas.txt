@@ -345,8 +345,48 @@ pop : Eliminar el último elemento de una matriz es tan simple como ejecutar pop
 ...........................................................................................
 
 
-prueba desde home
+***** Objetos *****
+
+para trabajar con objetos es recomendables declararlos con "const" ejemplo:
+
+const b = {
+
+}
 
 
-ahora desde work
+no es aconsejable ó ya no se usa usando el contructor ejemplo:
+
+const c = new object();
+
+Un objeto es una colección de clave-valor, y dentro de ellos puede tener funciones.  ejemplo:
+
+const Noel = {
+    nombre: "noel",
+    apellido: "tejeda",
+    edad: 35,
+    pasatiempos: ["correr","hacer ejercicio","jugar"],
+    edo_civil: "casado",
+    contacto:  {
+        email:"noelati@gmail.com",
+        twitter: "@noelt",
+        movil: "4142039502"
+    },
+    saludar: function (){
+        console.log('hola')
+    }
+}
+
+
+maneras de acceder a una propiedad de un objeto, las propiedades son las variables dentro de un objeto y el atributo el contenido de la variable.
+console.log(Noel[nombre])  pero con la connotacion de punto (.) es la mejor opción:
+
+console.log(Noel.nombre)
+
+a las funciones dentro de los objetos se les llama métodos.
+
+
+...........................................................................................
+...........................................................................................
+
+
 
