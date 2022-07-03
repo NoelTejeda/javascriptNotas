@@ -388,5 +388,50 @@ a las funciones dentro de los objetos se les llama métodos.
 ...........................................................................................
 ...........................................................................................
 
+******** Manejo de errores ********
+try {
+    console.log ("en el try se agrega el código a evaluar")
+}catch(error){
+    console.log ("Cath, captura cualquier error surgido o lanzado en el try")
+}finally{
+    console.log("el bloque finally se ejecutará siempre al final de un bloque try-catch")
+}
 
+el finally haya error o NO siempre se ejecuta
+
+
+...........................................................................................
+...........................................................................................
+
+*********** Destructuracion ****************** 
+la destructuracion es la manera de acceder a los valores de arreglos ó propiedades de objetos en distintas variables.
+
+ejemplo:
+
+    *sin la destructuracion:
+
+    const numeros = [1,2,3]
+
+    let uno = numeros[0],
+    let dos = numeros[1],
+    let tres = numeros[2],
+
+    console.log (uno, dos, tres)
+
+    *Con destructuracion
+
+    const [uno, dos, tres] = numeros;
+    console.log (uno, dos, tres)
+
+...........................................................................................
+...........................................................................................
+
+Asincronía:
+
+JavaScript es single thread (un solo hilo ) es decir que sólo puede ejecutar una sola cosa a la vez.
+ejm:
+si solicitamos datos a una api y dependiendo de la red del servidor, se puede tardar mucho tiempo o poco en procesar esa solicitud. y mientras el hilo principal se queda bloqueado. esto haria que la página web no respondiera y es allí donde entra en juego la sincronia que permite realizar largas solicitudes de red sin bloquear el hilo prinicipal.
+
+
+ver los próximos videos 58 en adelante.
 
