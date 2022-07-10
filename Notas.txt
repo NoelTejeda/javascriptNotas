@@ -338,7 +338,8 @@ random[2][2]; //primer corchete accede a la matriz random, el segundo par de cor
 
 algunos metodos para acceder a las matrices son:
 
-push :  incluir uno o más elementos que desees agregas al final de tu matriz
+push :  incluir uno o más elementos que desees agregas al final de tu matriz, pero si el array está vacio y se desean incluir una 
+        serie de numeros, este método se puede usar.
 pop : Eliminar el último elemento de una matriz es tan simple como ejecutar pop() en ella
 
 ...........................................................................................
