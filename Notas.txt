@@ -358,10 +358,43 @@ funcionExpresada();
 
 **** Conclusión ****
 
-- una función es declarada cuando el enunciado empieza con la palabra clave function. 
+- una ***función es declarada*** cuando el enunciado empieza con la palabra clave function. ejemplo:
+    function saludo(){
+        console.log('Hola')
+    }
+
 - en la función declarativa se puede invocar antes ó después de haberse inicializado.
+
+
+
+
+- una ***función expresada*** es cuando a una variable le asignas el valor de una función anónima. ejemplo:
+    const saludo = function(){
+        console.log('Hola')
+    }
+
+- Solo las funciones expresadas pueden ser anónimas, las funciones declaradas deben tener un nombre.
 - una función expresada es necesario que primero sea inicializada y despúes invocada (antes NO)
 - a una función expresada también se le llama función anónima, porque no se le coloca nombre, pero mayormente es inicializada como una variable constante.
+
+
+*** RECOMENDACION ***
+ES MEJOR NO UTILIZAR ARROWS FUNCTION EN UN OBJETO.
+
+Por que las arrows function tienen un alcance global y si las utilizas dentro de un objeto dígamos que se sale del objeto ignorando que está en el contexto del objeto y cuando trates de manipular los métodos de los objetos no vas a poder por que no pertenece a dicho objeto.
+...........................................................................................
+...........................................................................................
+
+-----------------Funciones Flecha-----------------------------------------
+las funciones flecha son las nuevas maneras de declarar una función anónima (expresadas).
+
+
+
+
+
+
+
+
 
 
 ...........................................................................................
@@ -459,8 +492,8 @@ ejemplo:
     const numeros = [1,2,3]
 
     let uno = numeros[0],
-    let dos = numeros[1],
-    let tres = numeros[2],
+     dos = numeros[1],
+     tres = numeros[2],
 
     console.log (uno, dos, tres)
 
@@ -471,6 +504,8 @@ ejemplo:
 
 ...........................................................................................
 ...........................................................................................
+
+
 
 Asincronía:
 
