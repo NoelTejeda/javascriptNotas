@@ -10,4 +10,17 @@ function devolver(cadena = "") {
 
 }
 
-devolver('Hola Mundo');
+//devolver('Hola Mundo');
+
+//----------------------------------------------------------------
+
+const recortarTexto = (cadena = "", longitud = undefined) =>
+    (!cadena)
+        ? console.warn('no ingresaste una cadena de texto')
+        : (longitud === undefined)
+            ? console.warn('no ingresaste la longitud a recortar el texto')
+            : console.info(cadena.slice(0, longitud));
+
+recortarTexto('Hola Mundo', 4)
+recortarTexto()
+recortarTexto('hola')
