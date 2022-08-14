@@ -21,7 +21,17 @@
 
   <script type="text/javascript">
     function myfuncion() {
-      document.querySelector(".milink").style.backgroundColor = "yellow";
+
+      /* document.querySelector(".milink").style.backgroundColor = "yellow";
+      document.querySelector(".milink").style.border = "5px solid red";
+      */
+      //con una variable para evitar repetir codigo:
+
+      var query = document.querySelector(".milink")
+
+      query.style.backgroundColor = "green"
+      query.style.border = "5px solid black"
+
     }
 
   </script>
