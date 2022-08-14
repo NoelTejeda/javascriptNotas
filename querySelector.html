@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>queySelector</title>
+</head>
+
+<body>
+
+  <a href="www.google.com" id="milink">www.google.com</a><br>
+  <a href="www.instagram.com" id="milink">www.instagram.com</a><br>
+  <a href="www.facebook.com" class="milink">www.facebook.com</a><br>
+  <a href="www.gmail.com" class="milink">www.gmail.com</a><br>
+  <a href="www.internet.com" class="milink">www.internet.com</a><br><br>
+
+  <button onclick="myfuncion()">Haz click!</button>
+
+
+  <script type="text/javascript">
+    function myfuncion() {
+      document.querySelector(".milink").style.backgroundColor = "yellow";
+    }
+
+  </script>
+</body>
+
+</html>
+
+<!-- se enfoca en el primer elemento css el cual tenga un id(#) o clase(.) -->
