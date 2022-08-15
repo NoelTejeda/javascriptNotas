@@ -27,16 +27,24 @@
       */
       //con una variable para evitar repetir codigo:
 
-      var query = document.querySelector(".milink")
+      const query = document.querySelector(".milink")
+      console.log(query);
 
       query.style.backgroundColor = "green"
       query.style.border = "5px solid black"
 
     }
-
   </script>
 </body>
 
 </html>
 
-<!-- se enfoca en el primer elemento css el cual tenga un id(#) o clase(.) -->
+<!-- se enfoca en el primer elemento css el cual tenga un id(#) ; clase(.)  ó una etiqueta ('p')
+ejemplo:
+
+      var query = document.querySelector(".milink")
+      var query = document.querySelector("#milink")
+      var query = document.querySelector("p")
+
+
+-->
