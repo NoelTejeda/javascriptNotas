@@ -261,7 +261,8 @@ Existen 2 maneras
 
 let nombre = 'noel';
 let apellido = 'tejeda';
-console.log('mi nombre es '+" "+nombre+" "+apellido)
+
+console.log('mi nombre es: '+nombre+" " +apellido)
 
 2) y la otra es la interpolación de varibles:
 
@@ -271,8 +272,10 @@ console.log (`mi nombre es ${nombre} ${apellido}`)
 
 
 Nota: antes de emacscript6 para hacer saltos de linea habia que usar: \n   ejemplo:
-console.log ('linea 1 de texto\n'+
-'\y linea 2 de texto');
+console.log ('linea 1 de texto\n'+'y linea 2 de texto'); // se escribe así el salto de linea y se vé así:
+
+linea 1 de texto
+linea 2 de texto
 
 pero ahora con los template string se hace así:
 
@@ -405,18 +408,20 @@ las funciones flecha son las nuevas maneras de declarar una función anónima (e
 
 
 * cuando una función flecha recibe parametros es necesario colocarlo entre los parentesis de igual manera ejemplo:
-    const saludo = (nombre) => console.log(`Hola $(petra)`)
+    const saludo = (nombre) => console.log(`Hola ${nombre}`)
 
 
 * cuando una función flecha no recibe parametros o recibe varios es necesario colocarle los parentesis de igual manera. "PERO" si recibe un solo parametro se le pueden quitar los parentesis ejemplo:
-    const saludo = nombre => console.log(`Hola $(petra)`)
-
+    const saludo = nombre => console.log(`Hola ${nombre}`)
+    saludo(Noel)
 
 
     
 
 
 https://www.youtube.com/watch?v=WuCw9agV3Rc&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=23
+
+https://es.stackoverflow.com/questions/1799/cuando-usar-una-funci%C3%B3n-flechaarrow-function-en-vez-de-una-funci%C3%B3n-com%C3%BAn
 
 
 ...........................................................................................
@@ -536,5 +541,5 @@ ejm:
 si solicitamos datos a una api y dependiendo de la red del servidor, se puede tardar mucho tiempo o poco en procesar esa solicitud. y mientras el hilo principal se queda bloqueado. esto haria que la página web no respondiera y es allí donde entra en juego la sincronia que permite realizar largas solicitudes de red sin bloquear el hilo prinicipal.
 
 
-ver los próximos videos 58 en adelante.
+
 
