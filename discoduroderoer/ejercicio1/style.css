@@ -1,0 +1,22 @@
+body{
+   margin: 20px 50px 2px 20px; 
+  }
+
+.marco{
+  margin-left: 50px;
+  border: 3px solid red;
+  background-color: greenyellow;
+}
+
+h4{
+  font-size:x-large;
+  font-family: monospace;
+  font-style: oblique;
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+}
+
+body{
+  background-color: yellow;
+}

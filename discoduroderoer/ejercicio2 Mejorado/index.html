@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones sumadores y restadores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script defer src="archivo.js"></script>
+</head>
+
+<body>
+
+  <div class="container py-5 bg-warning text-center">
+    <label for="num_uno">Numero Uno</label>
+    <input type="number" id="num_uno">
+    <label for="num_dos">Numero Dos</label>
+    <input type="number" id="num_dos">
+
+    <button class="btn btn-info" id="sumar">
+      Sumar +
+    </button>
+    <button class="btn btn-danger" id="restar">
+      Restar -
+    </button>
+    <button class="btn btn-info" id="dividir">
+      Dividir /
+    </button>
+    <button class="btn btn-danger" id="multiplicar">
+      Multiplicar x
+    </button>
+    <h4 class="my-5">Resultado: <span id=spanResultado>0</span></h4>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
