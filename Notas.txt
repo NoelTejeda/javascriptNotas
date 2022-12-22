@@ -261,7 +261,7 @@ Existen 2 maneras
 
 let nombre = 'noel';
 let apellido = 'tejeda';
-console.log('mi nombre es '+" "+nombre+" "+apellido)
+console.log('mi nombre es '+ nombre +' '+ apellido)
 
 2) y la otra es la interpolación de varibles:
 
@@ -538,3 +538,16 @@ si solicitamos datos a una api y dependiendo de la red del servidor, se puede ta
 
 ver los próximos videos 58 en adelante.
 
+
+...........................................................................................
+...........................................................................................
+
+
+la función map lo que hace es recorrer un array y devolvernos otro array.
+
+
+la función filter tambien recorreo un array y devuelve otro array con los datos de la condición que le establezcamos.
+ejm:
+const resultado=reyes.filter(valor=>valor.vacasComidas>10);
+
+reyes es el nombre del array.
