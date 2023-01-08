@@ -540,6 +540,30 @@ JavaScript es single thread (un solo hilo ) es decir que sólo puede ejecutar un
 ejm:
 si solicitamos datos a una api y dependiendo de la red del servidor, se puede tardar mucho tiempo o poco en procesar esa solicitud. y mientras el hilo principal se queda bloqueado. esto haria que la página web no respondiera y es allí donde entra en juego la sincronia que permite realizar largas solicitudes de red sin bloquear el hilo prinicipal.
 
+...........................................................................................
+.............................****  método map  ****........................................
 
+
+
+map()crea una nueva matriz al llamar a un función para cada elemento de la matriz.
+
+map()llama a una función una vez para cada elemento en una matriz.
+
+map()no ejecuta la función para elementos vacíos.
+
+map()no cambia la matriz original. 
+
+es una manera altenativa a un forEach ya que recorre el array
+
+// dentro de la función puede ir cualquier palabra (name), pero debe ser la misma a la cuál se le colocará lo que queramos hacer.
+
+const names = ["Ana", "Pablo", "Pedro", "Pancracio", "Heriberto"];
+const nameSizes = names.map((name) => name.length);
+
+console.log(nameSizes) ; // Devuelve [3, 5, 5, 9, 9]
+
+
+...........................................................................................
+.............................****  método filter  ****.....................................
 
 
