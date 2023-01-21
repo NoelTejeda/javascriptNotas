@@ -261,12 +261,7 @@ Existen 2 maneras
 
 let nombre = 'noel';
 let apellido = 'tejeda';
-<<<<<<< HEAD
 console.log('mi nombre es '+ nombre +' '+ apellido)
-=======
-
-console.log('mi nombre es: '+nombre+" " +apellido)
->>>>>>> 12e8fa741b56d147da7f83e049fb18968c7f4c15
 
 2) y la otra es la interpolación de varibles:
 
@@ -276,15 +271,8 @@ console.log (`mi nombre es ${nombre} ${apellido}`)
 
 
 Nota: antes de emacscript6 para hacer saltos de linea habia que usar: \n   ejemplo:
-<<<<<<< HEAD
 console.log ('linea 1 de texto\n'+
 '\y linea 2 de texto');
-=======
-console.log ('linea 1 de texto\n'+'y linea 2 de texto'); // se escribe así el salto de linea y se vé así:
-
-linea 1 de texto
-linea 2 de texto
->>>>>>> 12e8fa741b56d147da7f83e049fb18968c7f4c15
 
 pero ahora con los template string se hace así:
 
@@ -417,21 +405,12 @@ las funciones flecha son las nuevas maneras de declarar una función anónima (e
 
 
 * cuando una función flecha recibe parametros es necesario colocarlo entre los parentesis de igual manera ejemplo:
-<<<<<<< HEAD
     const saludo = (nombre) => console.log(`Hola $(petra)`)
 
 
 * cuando una función flecha no recibe parametros o recibe varios es necesario colocarle los parentesis de igual manera. "PERO" si recibe un solo parametro se le pueden quitar los parentesis ejemplo:
     const saludo = nombre => console.log(`Hola $(petra)`)
 
-=======
-    const saludo = (nombre) => console.log(`Hola ${nombre}`)
-
-
-* cuando una función flecha no recibe parametros o recibe varios es necesario colocarle los parentesis de igual manera. "PERO" si recibe un solo parametro se le pueden quitar los parentesis ejemplo:
-    const saludo = nombre => console.log(`Hola ${nombre}`)
-    saludo(Noel)
->>>>>>> 12e8fa741b56d147da7f83e049fb18968c7f4c15
 
 
     
@@ -439,11 +418,8 @@ las funciones flecha son las nuevas maneras de declarar una función anónima (e
 
 https://www.youtube.com/watch?v=WuCw9agV3Rc&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=23
 
-<<<<<<< HEAD
-=======
 https://es.stackoverflow.com/questions/1799/cuando-usar-una-funci%C3%B3n-flechaarrow-function-en-vez-de-una-funci%C3%B3n-com%C3%BAn
 
->>>>>>> 12e8fa741b56d147da7f83e049fb18968c7f4c15
 
 ...........................................................................................
 ...........................................................................................
@@ -593,4 +569,26 @@ console.log(nameSizes) ; // Devuelve [3, 5, 5, 9, 9]
 ...........................................................................................
 .............................****  método filter  ****.....................................
 
+
+...........................................................................................
+.............................****  callback  ****.....................................
+
+como Js es un lenguaje interpretado (secuencial) en algunas casos necesitamos que una función se ejecute, hasta que otra se haya
+ejecutado (asincrono). para esto se usan las callbacks.
+
+los callbacks son funciones que se pasan a otra funcion como un argumento, y luego se invoca dentro de 
+una función externa para completar alguna rutina.
+
+En resumen: es una función que se pasa a otra como argumento (no como parametro) y NO solo se usan para funciones asincronas, ya que casi todo 
+en Js recibe un callback ejm: forEach, map, reduce, etc. 
+
+const names = ['noel','anyela','marianyela']
+names.map(name =>{console.log(name)})
+
+la función name se le pasa a concole.log y se ejecuta después que se haya completado alguna cosa; en este caso se ha completado de "acceder" con el map
+es decir el callback dice: tu has eso y cuando lo tengas yo hago algo. el map recorre el array y se lo pasa a console.
+
+const array = [1,2,3,4,5]
+const resultArray = array.map(x=>x+10)
+console.log(resultArray)
 
