@@ -592,3 +592,6 @@ const array = [1,2,3,4,5]
 const resultArray = array.map(x=>x+10)
 console.log(resultArray)
 
+https://www.youtube.com/watch?v=kjCH7vvISsE&list=TLPQMjEwMTIwMjMTJCh2pdfkuw&index=2
+ ¿Qué es un callback en JavaScript? Tutorial desde cero
+
